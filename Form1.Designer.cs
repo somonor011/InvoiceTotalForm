@@ -125,6 +125,7 @@
             button1.TabIndex = 8;
             button1.Text = "Calculate";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -132,9 +133,10 @@
             button2.Location = new Point(200, 236);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
-            button2.TabIndex = 9;
+            button2.TabIndex = 3;
             button2.Text = "Exit";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
