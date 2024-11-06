@@ -32,12 +32,12 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            label5 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            label6 = new Label();
-            label7 = new Label();
+            txt_subtotal = new TextBox();
+            lbl_dispercent = new Label();
+            btn_cal = new Button();
+            btn_exit = new Button();
+            lbl_disamount = new Label();
+            lbl_total = new Label();
             SuspendLayout();
             // 
             // label1
@@ -81,70 +81,69 @@
             label4.TabIndex = 3;
             label4.Text = "Total";
             // 
-            // textBox1
+            // txt_subtotal
             // 
-            textBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(200, 37);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(168, 27);
-            textBox1.TabIndex = 4;
+            txt_subtotal.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txt_subtotal.Location = new Point(200, 37);
+            txt_subtotal.Name = "txt_subtotal";
+            txt_subtotal.Size = new Size(168, 27);
+            txt_subtotal.TabIndex = 4;
             // 
-            // label5
+            // lbl_dispercent
             // 
-            label5.BackColor = Color.FromArgb(224, 224, 224);
-            label5.BorderStyle = BorderStyle.Fixed3D;
-            label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(200, 86);
-            label5.Name = "label5";
-            label5.Size = new Size(168, 25);
-            label5.TabIndex = 5;
-            label5.Click += label5_Click;
+            lbl_dispercent.BackColor = Color.FromArgb(224, 224, 224);
+            lbl_dispercent.BorderStyle = BorderStyle.Fixed3D;
+            lbl_dispercent.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_dispercent.Location = new Point(200, 86);
+            lbl_dispercent.Name = "lbl_dispercent";
+            lbl_dispercent.Size = new Size(168, 25);
+            lbl_dispercent.TabIndex = 5;
             // 
-            // button1
+            // btn_cal
             // 
-            button1.BackColor = Color.SeaGreen;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(83, 239);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 8;
-            button1.Text = "Calculate";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btn_cal.BackColor = Color.SeaGreen;
+            btn_cal.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_cal.ForeColor = SystemColors.ButtonHighlight;
+            btn_cal.Location = new Point(83, 239);
+            btn_cal.Name = "btn_cal";
+            btn_cal.Size = new Size(94, 29);
+            btn_cal.TabIndex = 8;
+            btn_cal.Text = "Calculate";
+            btn_cal.UseVisualStyleBackColor = false;
+            btn_cal.Click += btn_cal_Click;
             // 
-            // button2
+            // btn_exit
             // 
-            button2.BackColor = Color.Red;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(200, 239);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 3;
-            button2.Text = "Exit";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btn_exit.BackColor = Color.Red;
+            btn_exit.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_exit.ForeColor = SystemColors.ButtonHighlight;
+            btn_exit.Location = new Point(200, 239);
+            btn_exit.Name = "btn_exit";
+            btn_exit.Size = new Size(94, 29);
+            btn_exit.TabIndex = 3;
+            btn_exit.Text = "Exit";
+            btn_exit.UseVisualStyleBackColor = false;
+            btn_exit.Click += btn_exit_Click;
             // 
-            // label6
+            // lbl_disamount
             // 
-            label6.BackColor = Color.FromArgb(224, 224, 224);
-            label6.BorderStyle = BorderStyle.Fixed3D;
-            label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(200, 136);
-            label6.Name = "label6";
-            label6.Size = new Size(168, 25);
-            label6.TabIndex = 9;
+            lbl_disamount.BackColor = Color.FromArgb(224, 224, 224);
+            lbl_disamount.BorderStyle = BorderStyle.Fixed3D;
+            lbl_disamount.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_disamount.Location = new Point(200, 136);
+            lbl_disamount.Name = "lbl_disamount";
+            lbl_disamount.Size = new Size(168, 25);
+            lbl_disamount.TabIndex = 9;
             // 
-            // label7
+            // lbl_total
             // 
-            label7.BackColor = Color.FromArgb(224, 224, 224);
-            label7.BorderStyle = BorderStyle.Fixed3D;
-            label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(200, 188);
-            label7.Name = "label7";
-            label7.Size = new Size(168, 25);
-            label7.TabIndex = 10;
+            lbl_total.BackColor = Color.FromArgb(224, 224, 224);
+            lbl_total.BorderStyle = BorderStyle.Fixed3D;
+            lbl_total.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_total.Location = new Point(200, 188);
+            lbl_total.Name = "lbl_total";
+            lbl_total.Size = new Size(168, 25);
+            lbl_total.TabIndex = 10;
             // 
             // Form1
             // 
@@ -152,17 +151,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MediumTurquoise;
             ClientSize = new Size(410, 290);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label5);
-            Controls.Add(textBox1);
+            Controls.Add(lbl_total);
+            Controls.Add(lbl_disamount);
+            Controls.Add(btn_exit);
+            Controls.Add(btn_cal);
+            Controls.Add(lbl_dispercent);
+            Controls.Add(txt_subtotal);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Invoice Total";
             ResumeLayout(false);
             PerformLayout();
@@ -174,11 +174,11 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private Label label5;
-        private Button button1;
-        private Button button2;
-        private Label label6;
-        private Label label7;
+        private TextBox txt_subtotal;
+        private Label lbl_dispercent;
+        private Button btn_cal;
+        private Button btn_exit;
+        private Label lbl_disamount;
+        private Label lbl_total;
     }
 }
